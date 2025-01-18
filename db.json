@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Complete Math Assignment",
+      "description": "Finish all exercises from Chapter 4: Differential Equations",
+      "status": "Completed"
+    },
+    {
+      "id": 2,
+      "title": "Prepare for Physics Quiz",
+      "description": "Revise topics on Newton's Laws and Kinematics",
+      "status": "Completed"
+    },
+    {
+      "id": 3,
+      "title": "Group Project Meeting",
+      "description": "Discuss presentation slides for Environmental Studies project",
+      "status": "Completed"
+    },
+    {
+      "id": 4,
+      "title": "Submit Internship Application",
+      "description": "Apply for the Software Developer Intern role at XYZ Company",
+      "status": "In Progress"
+    },
+    {
+      "id": 5,
+      "title": "Attend Coding Workshop",
+      "description": "Join the React.js basics session hosted by the college tech club",
+      "status": "Completed"
+    },
+    {
+      "id": 6,
+      "title": "Prepare Weekly Budget",
+      "description": "Plan expenses for food, transport, and books",
+      "status": "In Progress"
+    }
+  ]
+}
