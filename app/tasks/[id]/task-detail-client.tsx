@@ -19,9 +19,11 @@ export default function TaskDetailClient() {
   useEffect(() => {
     const fetchTask = async () => {
       try {
-        const res = await fetch(`http://localhost:3001/tasks/${params.id}`);
-        if (!res.ok) throw new Error("Task not found");
-        const data = await res.json();
+        const response = await fetch(
+          `http://localhost:3001/tasks/${params.id}`
+        );
+        if (!response.ok) throw new Error("Task not found");
+        const data = await response.json();
         setTask(data);
         setError(null);
       } catch (err) {
