@@ -18,13 +18,16 @@ export const useTaskStore = create<TaskStore>((set, get) => ({
     set({ tasks: updatedTasks });
 
     try {
-      await fetch(`http://localhost:3001/tasks/${id}`, {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ status }),
-      });
+      await fetch(
+        `https://my-json-server.typicode.com/sukritihere/antriksh-labs_jsonserver/tasks/${id}`,
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ status }),
+        }
+      );
     } catch (error) {
       console.error("Failed to update task status on server:", error);
     }

@@ -20,7 +20,7 @@ export default function TaskDetailClient() {
     const fetchTask = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3001/tasks/${params.id}`
+          `https://my-json-server.typicode.com/sukritihere/antriksh-labs_jsonserver/tasks/${params.id}`
         );
         if (!response.ok) throw new Error("Task not found");
         const data = await response.json();

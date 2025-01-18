@@ -18,7 +18,9 @@ export default function Home() {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const res = await fetch("http://localhost:3001/tasks");
+        const res = await fetch(
+          "https://my-json-server.typicode.com/sukritihere/antriksh-labs_jsonserver/tasks"
+        );
         if (!res.ok) throw new Error("Failed to fetch tasks");
         const data = await res.json();
         setTasks(data);
